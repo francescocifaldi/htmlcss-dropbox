@@ -17,7 +17,17 @@ ul, ol{
     list-style: none;
 }
 
+.container-full{
+    max-width: 100%;
+    margin: 0 auto;
+}
+
 .container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.container-sm{
     max-width: 1000px;
     margin: 0 auto;
 }
@@ -34,4 +44,29 @@ ul, ol{
 
 .debug{
     border: 2px dotted red;
+}
+
+:root{
+    --blue: #0061FF;
+}
+
+.justify-between{
+    justify-content: space-between;
+}
+
+header .container-full{
+    padding: 20px 20px;
+}
+
+.menu{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    font-size: 17px;
+}
+
+.btn{
+    background-color: var(--blue);
+    color: white;
+    padding: 10px 20px;
 }
